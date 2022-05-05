@@ -36,7 +36,7 @@ public class Program {
 	}
 	
 	public  static void showResult(int value ) {
-		System.out.println("Higher = " + value);
+		System.out.println("Higher =  " + value);
 	}
 
 }
