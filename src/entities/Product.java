@@ -2,11 +2,42 @@ package entities;
 
 public class Product {
 
-	public String name;
-	public double price;
-	public int quantity;
+	String name;
+	private double price;
+	private int quantity;
 	
-	public double totalValueInStock() {
+	public Product(String name, double price, int quantity) {//executa no momento da execução. CONSTRUTOR
+		this.name = name; //this = referência para o próprio objeto;
+		this.price = price;
+		this.quantity = quantity;
+	}
+	
+	public Product(String name, double price) {//executa no momento da execução. CONSTRUTOR
+		this.name = name; //this = referência para o próprio objeto;
+		this.price = price;	
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	public int getQuantity() {
+		return quantity;
+	}
+	
+	public double totalValueInStock() {//MÉTODO
 		return price * quantity;
 	}
 	
